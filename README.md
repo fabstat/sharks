@@ -1,2 +1,2 @@
 # sharks
-Presentation on the biology and conservation of the oceanic whitetip shark.
+Presentations on the biology, distribution and conservation status of the oceanic whitetip shark.
