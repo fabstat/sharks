@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>The Effects of Being Caught: How Fisheries Affect Oceanic Whitetip Sharks</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+	<section data-background-image="img/ows.jpg" data-background-opacity=".4">
+	  <h4>The Effects of Being Caught: How Fisheries Affect Oceanic Whitetip Sharks</h4>
+	  <small>by Fabiana Ferracina</small>
+	</section>
+	<section data-background-image="img/ows.jpg" data-background-opacity=".4">
+	  <h4>Sharks!</h4>
+	  <ul>
+	    <li class="fragment">Pelagic sharks, ovefishing and conservation</li>
+	    <li class="fragment">Introducing the oceanic whitetip shark</li>
+	    <li class="fragment">Go fish!: fisheries and fishing gear</li>
+	    <li class="fragment">What we know: summarizing the literature</li>
+	    <li class="fragment">Knowledge is action: recommendations from the literature</li>
+	  </ul>
+	</section>
+	<section>
+	  <section data-background-image="img/pelagic.jpg" data-background-opacity=".3">
+	    <h4>Pelagic Sharks</h4>
+	    <p class="fragment">Pelagic sharks are open ocean sharks, distributed globally in Earth's oceans. They like warm waters. They migrate. They are the top, apex predators.</p>
+	    <p class="fragment">Their abundance determines the health of our oceans. If they disappear, the oceans become out of balance, and we suffer too.</p>
+	    <p class="fragment">There are 53 pelagic shark species and 20 of them are threathed with extinction.</p>
+	  </section>
+	  <section data-background-image="img/fishery.jpg" data-background-opacity=".3">
+	    <h4>Overfishing</h4>
+	    <p class="fragment">These sharks are vulnerable due to fishing pressures. They are slow to mature, slow to reproduce and do not produce many young.</p>
+	    <p class="fragment">Modern fishing methods, such as the use of longlines, have devastated shark populations world-wide.</p>
+	    <p class="fragment">They can be the target catch, but most of the time they are caught incedentally by commercial tuna fisheries.</p>
+	  </section>
+	  <section data-background-image="img/rfmo.png" data-background-opacity=".8">
+	    </section>
+	  <section data-background-image="img/rfmo.png" data-background-opacity=".2">
+	    <h4>Conservation</h4>
+	    <p class="fragment">Regional Fisheries Management Organizations (RFMO) is an international body dedicated to the sustainable management of fisheries.</p>
+	    <p class="fragment">They collect fisheries statistics, assess resources and monitor activities. Given data, they issue mandates.</p>
+	    <p class="fragment">However not all countries participate. Also, enforcing management measures is challenging.</p>
+	  </section>
+	  <section>
+	    <h4>Other Issues</h4>
+	    <ul>
+	      <li class="fragment">Shark fins are valuable. About 100 million sharks are killed each year by finning.</li>
+	      <li class="fragment">Loop holes in the laws are exploited.</li>
+	      <li class="fragment">No love lost for sharks due to depredation and damage to equipment.</li>
+	      <li class="fragment">Different shark species have different risk factors when it comes to bycatch.</li>
+	    </ul>
+	  </section>
+	  <section data-transition="fade-in">
+	    <p><img src="img/lawsjaws.jpg" width="350px"></p>
+	  </section>
+	  <section data-transition="fade-in">
+	    <p><img src="img/laws.png" width="800px"></p>
+	    <img src="img/lawsleg.png" width="300px">
+	  </section>
+	</section>
+	<section>
+	  <section data-background-video="img/ows.mp4" data-background-video-muted="true" data-background-opacity=".4">
+	    <h4><i>Carcharhinus longimanus</i></h4>
+	    <p class="fragment">Once an abundant species, the oceanic whitetip shark has suffered substatial population decline. Now considered critically endangered by th IUCN.</p>
+	    <p class="fragment">They live in the top layer of the open ocean and are distributed globally between 30$^{\circ}$ North and 35$^{\circ}$ South.</p>
+	    <p class="fragment">They can travel great distances, but seem philopatric.</p>
+	    <p class="fragment">They are caught incidentally by tuna fisheries, purposefully for their fins, or simply killed as they can cause damage to fishing equipment.</p>
+	  </section>
+	  <section>
+	    <h4>Population Trends</h4>
+	    <p><img src="img/young2020.png" width="800px"></p>
+	    <small><a href="sources/litreview.pdf" target="_blank"</a>Young et al 2020</small>
+	    </section>
+	</section>
+	<section>
+	  <section data-background-image="img/longline.png" data-background-opacity=".2">
+	    <h4>Longline Fisheries</h4>
+	    <ul>
+	      <li class="fragment">Buoys suspend a ~45 km line at a depth of interest, depending on the target species.</li>
+	      <li class="fragment">From the main line, hang several branch lines called ganglions.</li>
+	      <li class="fragment">At the end of each ganglion there is a hook with bait.</li>
+	      <li class="fragment">Different hook types and ganglion types, lengths; baits include squid, mackerel and sardines.</li>
+	      <li class="fragment">Once deployed longlines can soak for hours.</li>
+	      <li class="fragment">Most longlines in my review focus on tuna.</li>
+	      </ul>
+	  </section>
+	  <section>
+	    <h4>Hooks and Ganglions</h4>
+	    <p>Hooks can have different shapes and be either corrodible or stainless steel.</p>
+	    <p><img src="img/hooks.jpg" width="300px"></p>
+	    <p>Ganglion lengths and types, monofilament versus wire, can be consired.</p>
+	  </section>
+	</section>
+	<section>
+	  <section data-background-image="img/science.png" data-background-opacity=".3">
+	    <h4>Literature Review: Method</h4>
+	     <p>Web of Science search yielded 43 articles. 38 were relevant and 39 were further identified from citations.</p>
+	    <blockquote>TS=(((oceanic  AND whitetip)  OR (Carcharhinus  AND longimanus))
+	      AND (fisheries  OR overfishing  OR longline OR bycatch))</blockquote>
+	  </section>
+	  <section>
+	    <h4>Literature Review: Common Themes</h4>
+	    <ul>
+	      <li class="fragment">Finning bans do not solve bycatch mortality.</li>
+	      <li class="fragment">Post-release stress and change in behavior.</li>
+	      <li class="fragment">Post-release mortality is lower if sharks are not on-boarded and released in good condition.</li>
+	      <li class="fragment">Higher catch rates of epipelagic species when hooks are placed above 100 meters depth.</li>
+	      <li class="fragment">Circle hooks increase catch rate but lower mortality rate over J hooks.</li>
+	      <li class="fragment">Nylon/longer leads good for sharks, bad for other animals.</li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h7>Literature Review: Location versus Study Theme</h7>
+	    <p><img src="img/locvstudy.png" width="800px"></p>
+	  </section>
+	  <section>
+	    <h7>Literature Review: Oceanic Whitetip Studies</h7>
+	    <p><img src="img/owvstudy.png" width="800px"></p>
+	  </section>
+	  <section>
+	    <h7>Literature Review: Hook Types</h7>
+	    <p><img src="img/hooktypes.png" width="800px"></p>
+	  </section>
+	  <section>
+	    <h7>Literature Review: Fishing Method</h7>
+	    <p><img src="img/fishmethod.png" width="800px"></p>
+	  </section>
+	  <section>
+	    <h7>Literature Review: Data Type</h7>
+	    <p><img src="img/datatype.png" width="800px"></p>
+	  </section>
+	</section>
+	<section>
+	  <section data-transition="fade-in">
+	    <h4>Conclusions</h4>
+	    <ol>
+	      <li class="fragment">Need more data!</li>
+	      <li class="fragment">Oceanic whitetip shark population in steep decline and little is know about its post release mortality rates.</li>
+	      <li class="fragment">Oceanic whitetip sharks seem more resistant to being stuck on the line.</li>
+	      <li class="fragment">Location, location, location: hook placement really matters. Although lower hooks may catch more pelagic thresher sharks.</li>
+	      <li class="fragment">No guts for circle hooks: better shark survival at a higher catch rate cost.</li>
+	    </ol>
+	  </section>
+	  <section data-transition="fade-in">
+	      <p class="fragment">Conservation is as must about policy as it is about science.</p>
+	      <p class="fragment">Shark conservation relies on our ability as a people to understand how to utilize our planet's resources in a sustainable fashion.</p>
+	  </section>
+	  <section data-background-image="img/owdiscuss.jpg" data-background-opacity=".3">
+	    <h4>Discussion</h4>
+	    <ul>
+	      <li>Are modification to fishing gear enough?</li>
+	      <li>What is the highest priority problem to solve?</li>
+	      <li>How do we enforce protections?</li>
+	      <li>How do we get governments to care?</li>
+	    </ul>
+	    <br>
+	    <br>
+	    <br>
+	   <small><i><a href="https://commons.wikimedia.org/w/index.php?curid=53580980" target="_blank">Background image by Alexander Vasenin - Own work, CC BY-SA 4.0</a></i></small>
+	  </section>
+	</section>
+	<section data-background-image="img/fin.gif" data-background-opacity=".3">
+	  <h1>Fin</h1>
+	  <h4>Sources</h4>
+	  <ol>
+	  <li><a href="https://www.youtube.com/watch?v=e98MXrICD7A" target="_blank">Oceanic whitetip shark video</a></li>
+	  <li><a href="https://southteksl.com/index.php/applications/pelagic-long-line" target="_blank">Pelagic longline image</a></li>
+	  <li><a href="https://en.wikipedia.org/wiki/Shark_finning" target="_blank">Shark Finning Laws Map</a></li>
+	  <li><a href="https://wildaid.org/" target="_blank">Wild Aid Laws Poster</a></li>
+	  <li><a href="https://obis.org/" target="_blank">Ocean Biodiversity Information System</a></li>
+	  <li><a href="https://en.wikipedia.org/wiki/List_of_threatened_sharks" target="_blank">List of Threatened Sharks</a></li>
+	  <li><a href="https://www.seafoodwatch.org/" target="_blank">Seafood Watch</a></li>
+	  <li><a href="sources/litreview.pdf" target="_blank">Literature Review Table</a></li>
+	</section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+      autoPlayMedia: true,
+      math: {
+      mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+      config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+      },
+      dependencies: [
+      { src: 'plugin/markdown/marked.js' },
+      { src: 'plugin/markdown/markdown.js' },
+      { src: 'plugin/notes/notes.js', async: true },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/math/math.js', async: true }
+      ]
+      });
+    </script>
+  </body>
+</html>
