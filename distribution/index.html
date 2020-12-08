@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Markov Random Fields: Quantifying Neuronal Spikes and Forest Fires</title>
+    <title>Hierarchical Species Distribution Modeling of the Oceanic Whitetip Shark</title>
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css">
@@ -24,29 +24,105 @@
   <body>
     <div class="reveal">
       <div class="slides">
+	<section data-background-image="img/ows.jpg" data-background-opacity=".4">
+	  <h4>Hierarchical Species Distribution Modeling of the Oceanic Whitetip Shark</h4>
+	  <small>by Fabiana Ferracina</small>
+	</section>
+	<section data-background-image="img/ows.jpg" data-background-opacity=".4">
+	  <h4>Table of contents:</h4>
+	  <ol>
+	    <li class="fragment highlight-current-green">About the oceanic whitetip shark</li>
+	    <li class="fragment highlight-current-green">A short introduction to Hierarchical Species Distribution Modeling</li>
+	    <li class="fragment highlight-current-green">Applying HSDM to presence-only data</li>
+	    <li class="fragment highlight-current-green">Discussion and next steps</li>
+	  </ol>
+	</section>
 	<section>
-	  <section data-background-image="img/neurons.gif" data-background-opacity=".4">
-	    <h4>Markov Random Fields: Quantifying Neuronal Spikes and Forest Fires</h4>
-	    <small>by Fabiana Ferracina and Jacob Pennington (WSU Vancouver)</small>
-	      <p class="fragment">Our goal is to apply Markov Random Fields to the problem of image segmentation for the purpose of classifying neuronal activity and detecting forest fires.</p>
+	  <section data-background-video="img/ows.mp4" data-background-video-muted="true" data-background-opacity=".4">
+	    <h4>The Oceanic Whitetip Shark</h4>
+	    <p class="fragment">Once an abundant species, the oceanic whitetip shark has suffered substatial population decline. Now considered critically endangered by the IUCN.</p>
+	    <p class="fragment">They live in the top layer of the open ocean and are distributed globally between 30$^{\circ}$ North and 35$^{\circ}$ South.</p>
+	    <p class="fragment">They can travel great distances, but seem philopatric.</p>
+	    <p class="fragment">They are incidentally caught/killed by fisheries faster than they can replenish their population.</p>
+	    <p class="fragment">Climate change will likely exacerbate their decline.</p>
+	  </section>
+	  <section>
+	    <h4>Population Trends</h4>
+	    <p><img src="img/young2020.png" width="600px"></p>
+	    <small><a href="sources/young2020biology.pdf" target="_blank">Young et al 2020</a></small>
+	  </section>
+	  <section data-transition="fade-out">
+	    <h4>Data</h4>
+	    <p><img src="img/ows_distro.png" width="900px"></p>
+	    <small><a href="https://obis.org/" target="_blank">Ocean Biodiversity Information System</a></small>
+	  </section>
+	  <section data-transition="fade-in">
+	    <h4>Data</h4>
+	    <p><img src="img/tempmean_ss.png" width="500px"></p>
+	    </section>
 	</section>
-	  <section data-background-image="img/fmri.jpg" data-background-opacity=".3">
-	    <p>Researchers have shown that the MRF model can spatially quantify neuronal activity data:</p>
-	    <img src="img/mrf-neurons-a.png" width="409px"> <img src="img/mrf-neurons.png" width="470px">
-	    <span class="fragment">Further exploration of model assumptions is necessary in order to apply it to in vivo or ex vivo imaging data.</span>
+	<section data-background-image="img/maxent.png" data-background-opacity=".4">
+	  <section>
+	    <h4>Hierarchical Species Distribution Modeling</h4>
+	    <p><img src="img/hsdm.png" width="800px"></p>
+	    <small><a href="sources/hefley2016.pdf" target="_blank">Hefley et al 2016</a></small>
 	  </section>
-	  <section data-background-image="img/WA2015Fires.jpg" data-background-opacity=".6">
-	    <p>In Ecology, MRFs can be used on remote sensing and satellite imagery in order to classify land types and detect forest fires.</p>
-	    <img src="img/landtypes.png" width="600px">
-	  </section>
-	  <section data-background-image="img/WA2015Fires.jpg" data-background-opacity=".6">
-	    <img src="img/landtypes.png" width="600px">
-	    <p>With respect to fire, patches of land are much like neurons which with repect to firing can be active, refractory, or quiescent.</p>
+	  <section>
+	    <h7>hSDM</h7>
+	    <p>Still working out the kinks:</p>
+	    <pre><code data-trim data-noescape>
+	      mod.hSDM.binomial <- hSDM.binomial(presences = sdmdata$pb,
+                           trials = rep(1, dim(sdmdata)[1]),
+                           suitability =~present.predictors.scaled,
+                           data = data.obs,
+                           suitability.pred = data.pred,
+                           burnin=1000, mcmc=1000, thin=1,
+                           beta.start=0,
+                           mubeta=0, Vbeta=1.0E6,
+                           seed=1234, verbose=1, save.p=1)
+	     </code> </pre>
 	  </section>
 	</section>
-	<section data-background-image="img/forest-fire.gif" data-background-opacity=".3">
-	  <h1>Sources</h1>
-	  <a href="https://github.com/nitrofix/neuron-forest/tree/master/proposal/sources" target="_blank">Relevant papers and references</a>
+	<section>
+	  <section>
+	    <h4>Data Exploration</h4>
+	    <p><img src="img/tempviolin.png" width="300px">
+	      <img src="img/salinityviolin.png" width="300px">
+	    <img src="img/curvelviolin.png" width="300px"></p>
+	  </section>
+	  <section data-transition="fade-out">
+	    <h4>GLM</h4>
+	    <p><img src="img/presentglm.png" width="600px">
+	    </p>
+	  </section>
+	  <section data-transition="fade-in">
+	    <h4>GLM</h4>
+	    <p><img src="img/aucglm.png" width="600px"></p>
+	  </section>
+	 <section data-transition="fade-in">
+	    <h4>Predicted Suitability for 2050 using RCP 4.5</h4>
+	    <p><img src="img/glm45.png" width="600px"></p>
+	  </section>
+	</section>
+	<section>
+	  <section data-background-image="img/owdiscuss.jpg" data-background-opacity=".3">
+	    <h4>Discussion and Next Steps</h4>
+	    <ul>
+	      <li>Run GLM on thinned dataset.</li>
+	      <li>Continue debugging code in order to run hSDM methods.</li>
+	      <li>Write my own code sampler from scratch (not for this semester).</li>
+	      <li>Explore other regions and ocean climate variables.</li>
+	    </ul>
+	  </section>
+	</section>
+	<section data-background-image="img/fin.gif" data-background-opacity=".3">
+	  <h1>Fin</h1>
+	  <ol>
+	    <li><a href="https://www.youtube.com/watch?v=e98MXrICD7A" target="_blank">Oceanic whitetip shark video</a></li>
+	    <li><a href="https://www.blueplanet-liveaboards.com/wp-content/uploads/DSC4902.jpg" target="_blank">Oceanic whitetip (title)</a>/<a href="https://commons.wikimedia.org/w/index.php?curid=53580980" target="_blank">Oceanic whitetip (discussion)</a> images</li>
+	    <li><a href="https://obis.org/" target="_blank">Ocean Biodiversity Information System</a></li>
+	    <li><a href="https://www.iucnredlist.org/species/39374/2911619" target="_blank">IUCN Red List for the oceanic whitetip shark</a></li>
+	    <li><a href="https://bio-oracle.org/" target="_blank">Bio-Oracle</a></li>
 	</section>
       </div>
     </div>
